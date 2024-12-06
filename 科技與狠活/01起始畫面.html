@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +9,85 @@
 </head>
 <style>
     body {
-    margin: 0;
-    font-family: 'jf-openhuninn-2.1', sans-serif;
-    background: radial-gradient(#FF8000 0%, #E60013 100%);
-}
+        margin: 0;
+        font-family: 'jf-openhuninn-2.1', sans-serif;
+        background: radial-gradient(#FF8000 0%, #E60013 100%);
+        overflow: hidden;
+    }
 
-.container {
-    width: 100%;
-    max-width: 375px;
-    height: 100vh;
-    margin: 0 auto;
-   
-    background-size: cover; /* 確保圖片覆蓋整個背景 */
-    background-position: center; /* 確保背景居中 */
-    padding: 120px;
-    display: flex;
-    flex-direction: column; /*元素按垂直方向排列 */
-    align-items: center;
-}
+    .container {
+        width: 100%;
+        max-width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        background-size: cover;
+        /* 確保圖片覆蓋整個背景 */
+        background-position: center;
+        /* 確保背景居中 */
+        /* padding: 120px; */
+        display: flex;
+        flex-direction: column;
+        /*元素按垂直方向排列 */
+        justify-content: space-around;
+        align-items: center;
+        max-width: 375px;
+    }
+    
 
-.image-wrapper img {
-    width: 150px;
-    height: 150px;
-}
+    .image-wrapper img {
+        width: 150px;
+        height: 150px;
+    }
 
-.button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
-    margin: 50px 0;
-}
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin: 50px 0;
+    }
 
-.btn {
-    width: 200%;
-    max-width: 250px;
-    height: 50px;
-    background-color: #333333;
-    border-radius: 20px;
-    border: none;  /* 去除邊框 */
-    outline: none;  /* 去除瀏覽器的預設外框 */
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
+    .btn {
+        width: 200%;
+        max-width: 250px;
+        height: 50px;
+        background-color: #333333;
+        border-radius: 20px;
+        border: none;
+        /* 去除邊框 */
+        outline: none;
+        /* 去除瀏覽器的預設外框 */
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
 
-.btn:hover {
-    background-color: #FAC209;  /* 滑鼠經過時背景顏色 */
-    color: #333333;
-}
+    .btn:hover {
+        background-color: #FAC209;
+        /* 滑鼠經過時背景顏色 */
+        color: #333333;
+    }
 
-.footer-image img {
-    width: 100%;
-    height: 25%; /* 確保高度覆蓋容器 */
-    object-fit: cover; /* 確保圖片比例適應容器 */
-    position: absolute; /* 使用絕對定位 */
-    bottom: 0; /* 貼近容器底部 */
-    left: 0; /* 貼近容器左側 */
-}
+    .footer-image img {
+        width: 100%;
+        height: 25%;
+        /* 確保高度覆蓋容器 */
+        object-fit: cover;
+        /* 確保圖片比例適應容器 */
+        position: absolute;
+        /* 使用絕對定位 */
+        bottom: 0;
+        /* 貼近容器底部 */
+        left: 0;
+        /* 貼近容器左側 */
+    }
 
-.container {
-    position: relative; /* 為父容器設置相對定位 */
-}
-
+    .container {
+        position: relative;
+        /* 為父容器設置相對定位 */
+    }
 </style>
+
 <body>
     <div class="container">
         <div class="content">
@@ -92,4 +108,5 @@
 
 
 </body>
+
 </html>

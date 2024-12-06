@@ -6,19 +6,10 @@
     <title>McDonald's Loading</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 自定義漸層配置 -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        'mcdonalds': 'radial-gradient(circle at center, #FF8C00 0%, #FF0000 70%)',
-                    }
-                }
-            }
-        }
+
     </script>
 </head>
-<body>
+<body style="background:radial-gradient(circle at center, #FF8C00 0%, #FF0000 70%) ;">
     <div class="w-[375px] min-h-screen bg-mcdonalds mx-auto flex flex-col items-center">
         <!-- Logo 區域 -->
         <div class="mt-[40vh]">
