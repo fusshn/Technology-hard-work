@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歡迎頁面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+
+    .content {
+        text-align: center;
+        padding: 0;
+        font-family: 'jf-openhuninn-2.1', sans-serif;
+        background-image: url('./img/漸層背景.png');
+        background-size: cover;
+        /* 確保圖片覆蓋整個背景 */
+        background-position: center;
+        /* 確保背景居中 */
+        width: 375px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 100px;
+        /* 根據需求調整大小 */
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: white;
+        letter-spacing: 2px; /* 增加字母間距 */
+    }
+
+    .bar {
+        width: 200px;
+        height: 30px;
+        background: black;
+        border: 5px solid #FFEE4B;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <img class="logo" src="./img/logo.png" alt="Logo">
+        <div class="text">歡迎下次光臨</div>
+        <div class="bar"></div>
+    </div>
+</body>
+
+</html>

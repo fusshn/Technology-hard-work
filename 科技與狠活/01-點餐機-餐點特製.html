@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐點特製</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen flex flex-column relative bg-[url('./img/餐點特製.jpg')] bg-contain">
+        <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img class="w-10 flex items-center justify-center" src="./img/logo.png" alt="">
+        </div>
+        <div class="w-[375px] flex absolute top-[45%] left-1/2 transform -translate-x-1/2 pb-[8px]">
+            <img class="" src="./img/跑馬燈動畫.png" alt="">
+
+        </div>
+        <div
+            class="w-5/6 h-[240px] absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center justify-start bg-white rounded-3xl shadow-lg">
+            <!-- 標題 -->
+            <div class="w-full flex items-center justify-center space-x-4 ">
+                <div class="text-lg font-bold">餐點特製</div>
+                <img class="w-12 h-12 object-contain" src="./img/image bigmac.png" alt="餐點圖片">
+                <div class="text-lg font-bold">大麥克 $75</div>
+            </div>
+            <div class="w-full flex items-center justify-center space-x-4 border-t border-black">
+                <div class="text-lg font-bold ">內含</div>
+            </div>
+            <!-- 中間表格 -->
+            <table class="w-full table-fixed shadow-lg">
+                <!-- 第一行 -->
+                <tr class="h-4">
+                    <td class="border border-black border-l-0 p-0.5 text-center w-1/2 ">
+                        <div class="flex items-center justify-between  text-sm">
+                            <span>大麥克醬</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="border border-black border-r-0 p-0.5 text-center w-1/2">
+                        <div class="flex items-center justify-between  text-sm">
+                            <span>脫水洋蔥</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 第二行 -->
+                <tr class="h-4">
+                    <td class="border border-black border-l-0 p-0.5 text-center w-1/2 ">
+                        <div class="flex items-center justify-between  text-sm">
+                            <span>生菜</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="border border-black border-r-0 p-0.5 text-center w-1/2 ">
+                        <div class="flex items-center justify-between text-sm">
+                            <span>酸黃瓜</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 第三行 -->
+                <tr class=" h-4">
+                    <td class="border border-black border-l-0  p-0.5 text-center w-1/2 ">
+                        <div class="flex items-center justify-between text-sm">
+                            <span>吉事片</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="border border-black border-r-0 p-0.5 text-center w-1/2 ">
+                        <div class="flex items-center justify-between  text-sm">
+                            <span class="whitespace-nowrap">十分一牛肉片</span>
+                            <div class="flex items-center space-x-3 px-1">
+                                <img class="w-5" src="./img/minus.png" alt="減號圖示">
+                                <p>1</p>
+                                <img class="w-5" src="./img/plus.png" alt="加號圖示">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- 儲存&取消 -->
+            <div class="w-full flex items-center justify-center space-x-4 pt-2">
+                <div class="w-40 h-[40px] flex items-center justify-center bg-zinc-200 rounded-[12px] shadow-lg ">
+                    <p class="text-black text-lg font-black">取消</p>
+                </div>
+                <div class="w-40 h-[40px] flex items-center justify-center bg-zinc-400 rounded-[12px] shadow-lg ">
+                    <p class="text-black text-lg font-black">儲存</p>
+                </div>
+            </div>
+
+            <!-- 專人服務&一般模式 -->
+            <div class="w-full flex items-center justify-center space-x-4 ">
+                <div class="w-40 h-[40px] flex  items-center justify-center  ">
+                    <img class="w-[20px] mr-3" src="./img/Vector.png" alt="">
+                    <div class="text-lg font-bold bg-gray">專人服務鈴</div>
+                </div>
+
+                <div class="w-40 h-[40px] flex  items-center justify-center  ">
+                    <img class="w-[20px] mr-3" src="./img/Vector2.png" alt="">
+                    <div class="text-lg font-bold bg-gray">一般模式</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

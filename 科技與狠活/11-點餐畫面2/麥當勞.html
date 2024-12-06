@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    *,::after,::before{
+    box-sizing: border-box;
+    }
+   </style>
+</head>
+<body class="flex justify-center h-screen" style="background:radial-gradient(circle at center, #FF8C00 0%, #FF0000 70%) ;">
+    <!-- 主容器：設定固定寬度和背景漸層 -->
+    <div class="w-[375px] min-h-screen flex flex-col">
+        
+
+        <!-- Logo 區域：使用圖片取代預留區塊 -->
+        <div class="flex justify-center items-center py-4">
+            <img 
+                src="./img/logo.png" 
+                alt="McDonald's Logo" 
+                class="w-10 h-10 object-contain"
+            >
+        </div>
+
+        <!-- 選單區域：四個主要分類 -->
+        <div class="flex justify-center items-center gap-1  mt-2">
+            <a href="#" class="text-white px-4 py-2 rounded-full">超值全餐</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full">飲料</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full">極選系列</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full">點心</a>
+        </div>
+
+        <!-- 主要內容區域：左側縮圖列表和右側詳細資訊 -->
+        <div class="flex-1 flex pl-6 pt-8 gap-3 overflow-hidden">
+            <!--   -->
+            <!-- 左側縮圖列表 -->
+            <div class="flex flex-col gap-1  max-h-[calc(100vh-250px)]"> 
+                <img src="./img/832x822_雙層四盎司牛肉堡-1_product-header-desktop 1 (1).png" alt="漢堡1" class="w-20 h-20 object-cover rounded">
+                <img src="./img/big-mac_832x822_2_product-header-desktop 1.png" alt="漢堡2" class="w-20 h-20 object-cover rounded">
+                <img src="./img/filet-o-fish_832x822_product-header-desktop 1.png" alt="漢堡3" class="w-20 h-20 object-cover rounded">
+                <img src="./img/雙層麥香鷄_product-header-desktop 1.png" alt="漢堡4" class="w-20 h-20 object-cover rounded">
+                <img src="./img/spicy-chicken-filet-burger_832x822_product-header-desktop.png" alt="漢堡5" class="w-20 h-20 object-cover rounded">
+                <img src="./img/mcchicken_832x822_product-header-desktop 2.png" alt="漢堡6" class="w-20 h-20 object-cover rounded">
+            </div>
+
+            <div class="flex-1 flex flex-col items-end max-h-[calc(100vh-250px)]">
+                <!-- 主要商品圖片 -->
+                <div class="mb-6">
+                    <img 
+                        src="./img/Group 3.png" 
+                        alt="大麥克漢堡" 
+                        class="w-64 h-194 object-contain">
+                    
+                </div>
+                
+        
+                <!-- 加入購物車按鈕 -->
+                <button class="w-full bg-black text-white py-3 rounded-full mt-2">
+                    加入購物車＋
+                </button>
+            </div>
+        </div>
+
+        <!-- 底部功能按鈕 -->
+        <div class="p-4 flex justify-around">
+    <button class="bg-white w-[150px] h-[40px] rounded-full flex items-center justify-center gap-2">
+        <img src="./img/Vector.png" alt="友善模式圖標" class="w-4 h-4">
+        <span class="text-sm">友善模式</span>
+    </button>
+    <button class="bg-white w-[150px] h-[40px] rounded-full flex items-center justify-center gap-2">
+        <img src="./img/Vector (1).png" alt="服務鈴圖標" class="w-4 h-4">
+        <span class="text-sm">專人服務鈴</span>
+    </button>
+</div>
+    </div>
+</body>
+</html>

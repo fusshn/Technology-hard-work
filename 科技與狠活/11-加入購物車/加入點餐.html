@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Loading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 自定義漸層配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'mcdonalds': 'radial-gradient(circle at center, #FF8C00 0%, #FF0000 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="w-[375px] min-h-screen bg-mcdonalds mx-auto flex flex-col items-center">
+        <!-- Logo 區域 -->
+        <div class="mt-[40vh]">
+            <div class="w-40 h-40 bg-contain bg-center bg-no-repeat">
+                <img src="./img/image 37.png" alt="">
+            </div>
+        </div>
+
+        <!-- 圓形區域 -->
+        <div class="mt-12">
+            <div class="w-56 h-56 bg-white rounded-full flex items-center justify-center">
+                <div class="w-56 h-56 bg-contain bg-center bg-no-repeat">
+                    <img src="./img/Frame 11.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
