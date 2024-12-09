@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,10 @@
             justify-content: center;
             align-items: center;
         }
+        a {
+            text-decoration: none;
+            color:black;
+        }
 
         .all {
             width: 100%;
@@ -27,18 +32,22 @@
             max-width: 375px;
             display: flex;
             flex-direction: column;
-            position: relative; /* 添加相對定位 */
+            position: relative;
+            /* 添加相對定位 */
         }
 
         .banner {
-            flex: 1; /* 讓 banner 填充剩餘空間 */
+            flex: 1;
+            /* 讓 banner 填充剩餘空間 */
             width: 100%;
-            object-fit: cover; /* 確保圖片正確填充空間 */
+            object-fit: cover;
+            /* 確保圖片正確填充空間 */
         }
 
         .green {
             width: 100%;
-            height: min(31px, 5vh); /* 使用相對高度但不小於31px */
+            height: min(31px, 5vh);
+            /* 使用相對高度但不小於31px */
             background-color: rgb(31, 181, 73);
             color: white;
             display: flex;
@@ -48,7 +57,8 @@
 
         .container {
             width: 100%;
-            height: min(88px, 12vh); /* 使用相對高度但不小於88px */
+            height: min(88px, 12vh);
+            /* 使用相對高度但不小於88px */
             background-color: rgb(31, 181, 73);
             display: flex;
         }
@@ -75,6 +85,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .btn-block-right {
             width: 88px;
             height: 100%;
@@ -90,13 +101,15 @@
             width: 100%;
             height: auto;
         }
-        
     </style>
 </head>
+
 <body>
     <div class="all">
-        <img src="./img/banner.png" alt="" class="banner">
-        <div class="green">請點擊上方螢幕</div>
+        <a href="./02選擇用餐方式.html">
+            <img src="./img/banner.png" alt="" class="banner">
+            <div class="green">請點擊上方螢幕</div>
+        </a>
         <div class="container">
             <div class="btn-block">
                 <button type="button">English</button>
@@ -108,4 +121,5 @@
         </div>
     </div>
 </body>
+
 </html>
