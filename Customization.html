@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麥當勞商品卡片</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .product-card {
+            width: 375px;
+            height: 226px;
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .back-button {
+            width: 56px;
+            height: 32px;
+            background-color: rgb(0, 0, 0);
+            /* 確保是純黑色背景 */
+            border-radius: 16px;
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            /* 箭頭顏色為白色 */
+            font-size: 16px;
+            /* 調整箭頭大小 */
+        }
+
+
+
+        .product-image {
+            width: 200px;
+            height: 160px;
+            object-fit: contain;
+            margin-top: 8px;
+        }
+
+        .product-name {
+            width: 375px;
+            height: 34px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 4px;
+            line-height: 34px;
+        }
+
+        .product-price {
+            width: 375px;
+            height: 24px;
+            color: #00a650;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 4px;
+            line-height: 24px;
+        }
+        footer {
+            display: flex;
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .footer-space {
+            width: 375px;
+            background: rgb(245, 245, 245);
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 30px 30px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 5px;
+        }
+
+        .footer-space button {
+            width: 120px;
+            height: 39px;
+            background-color: rgb(252, 195, 5);
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-white">
+        <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-white bg-contain relative">
+            <div class="product-card">
+                <button class="back-button">
+                    <span style="color: white;"><</span>
+                </button>
+                <img class="product-image" src="./img/大圖.png" alt="帕瑪森主廚雞腿堡">
+                <h1 class="product-name">帕瑪森主廚雞腿堡</h1>
+                <p class="product-price">$108</p>
+            </div>
+            <!-- 點餐卡片 -->
+            <!-- 點餐卡片區域 -->
+            <div class="w-[370px] flex flex-col gap-2 mt-4"> <!-- 容器增加垂直間距 -->
+                <!-- 配餐選項 -->
+                <div
+                    class="w-full h-[52px] bg-white rounded-[20px] p-3 flex justify-between items-center" style="border: 1px solid rgba(146, 146, 146, 0.403);">
+                    <div class="flex items-center gap-3">
+                        <div class="w-[40px] h-[40px] bg-gray-200 rounded-md"></div> <!-- 預留圖片位置 -->
+                        <div class="flex flex-col justify-center">
+                            <p class="text-base font-bold">配餐</p>
+                            <p class="text-xs text-gray-500">無須加購套餐</p>
+                        </div>
+                    </div>
+                    <button class="w-[32px] h-[32px] bg-yellow-400 rounded-full flex items-center justify-center">
+                        +
+                    </button>
+                </div>
+                <!-- 選擇區塊 -->
+                <div class="grid grid-cols-4 gap-1 ">
+                    <div class="w-[90px] rounded-lg border border-gray-200 ">
+                        <!-- 上半部分：圖片和標題 -->  
+                        <div class=" flex flex-col items-center justify-center bg-gray-50 p-[8px] ">
+                            <img src="./img/麵包.png" alt="" class="w-[23px] h-[23px]  rounded-md mb-1">
+                            <p class="text-[10px] ">麵包</p>
+                            <p class="text-[8px] text-gray-400 ">無須加購套餐</p>
+                        </div>
+
+                        <!-- 下半部分：控制列 -->
+                        <div class="h-[26px] flex items-center justify-end px-2 bg-white">
+                            <span class="text-[6px] font-bold cursor-pointer">-</span>
+                            <span class="text-[6px]">1</span>
+                            <span class="text-[6px] font-bold cursor-pointer">+</span>
+                            <span class="text-[6px]">$10</span>
+                        </div>
+                    </div>
+                    <div class=" rounded-lg border border-gray-200 ">
+                        <!-- 上半部分：圖片和標題 -->  
+                        <div class=" flex flex-col items-center justify-center bg-gray-50 p-[8px] ">
+                            <img src="./img/麵包.png" alt="" class="w-[23px] h-[23px]  rounded-md mb-1">
+                            <p class="text-[10px] ">麵包</p>
+                            <p class="text-[8px] text-gray-400">無須加購套餐</p>
+                        </div>
+
+                        <!-- 下半部分：控制列 -->
+                        <div class="h-[26px] flex items-center justify-end px-2 bg-white">
+                            <span class="text-[6px] font-bold cursor-pointer">-</span>
+                            <span class="text-[6px]">1</span>
+                            <span class="text-[6px] font-bold cursor-pointer">+</span>
+                            <span class="text-[6px]">$10</span>
+                        </div>
+                    </div>
+                    <div class=" rounded-lg border border-gray-200 ">
+                        <!-- 上半部分：圖片和標題 -->  
+                        <div class=" flex flex-col items-center justify-center bg-gray-50 p-[8px] ">
+                            <img src="./img/麵包.png" alt="" class="w-[23px] h-[23px]  rounded-md mb-1">
+                            <p class="text-[10px] ">麵包</p>
+                            <p class="text-[8px] text-gray-400 ">無須加購套餐</p>
+                        </div>
+
+                        <!-- 下半部分：控制列 -->
+                        <div class="h-[26px] flex items-center justify-end px-2 bg-white">
+                            <span class="text-[6px] font-bold cursor-pointer">-</span>
+                            <span class="text-[6px]">1</span>
+                            <span class="text-[6px] font-bold cursor-pointer">+</span>
+                            <span class="text-[6px]">$10</span>
+                        </div>
+                    </div>
+                    <div class=" rounded-lg border border-gray-200 ">
+                        <!-- 上半部分：圖片和標題 -->  
+                        <div class=" flex flex-col items-center justify-center bg-gray-50 p-[8px] ">
+                            <img src="./img/麵包.png" alt="" class="w-[23px] h-[23px]  rounded-md mb-1">
+                            <p class="text-[10px] ">麵包</p>
+                            <p class="text-[8px] text-gray-400 ">無須加購套餐</p>
+                        </div>
+
+                        <!-- 下半部分：控制列 -->
+                        <div class="h-[26px] flex items-center justify-end px-2 bg-white">
+                            <span class="text-[6px] font-bold cursor-pointer">-</span>
+                            <span class="text-[6px]">1</span>
+                            <span class="text-[6px] font-bold cursor-pointer">+</span>
+                            <span class="text-[6px]">$10</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
+                
+                <div class="w-[370px] flex flex-col gap-3"> <!-- 容器增加垂直間距 -->
+                    <!-- 配餐選項 -->
+                    <div
+                        class="w-full h-[52px] bg-white rounded-[20px] p-3 flex justify-between items-center " style="border: 1px solid rgba(146, 146, 146, 0.403);">
+                        <div class="flex items-center gap-3">
+                            <div class="w-[40px] h-[40px] bg-gray-200 rounded-md"></div> <!-- 預留圖片位置 -->
+                            <div class="flex flex-col justify-center">
+                                <p class="text-base font-bold">配餐</p>
+                                <p class="text-xs text-gray-500">無須加購套餐</p>
+                            </div>
+                        </div>
+                        <button class="w-[32px] h-[32px] bg-yellow-400 rounded-full flex items-center justify-center">
+                            +
+                        </button>
+                    </div>
+                    <div class="w-[370px] flex flex-col gap-3"> <!-- 容器增加垂直間距 -->
+                        <!-- 配餐選項 -->
+                        <div
+                            class="w-full h-[52px] bg-white rounded-[20px]  p-3 flex justify-between items-center" style="border: 1px solid rgba(146, 146, 146, 0.403);">
+                            <div class="flex items-center gap-3">
+                                <div class="w-[40px] h-[40px] bg-gray-200 rounded-md"></div> <!-- 預留圖片位置 -->
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-base font-bold">配餐</p>
+                                    <p class="text-xs text-gray-500">無須加購套餐</p>
+                                </div>
+                            </div>
+                            <button
+                                class="w-[32px] h-[32px] bg-yellow-400 rounded-full flex items-center justify-center">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+        <div class="footer-space">
+            <button type="button">取消整筆訂單</button>
+            <button type="button">友善模式</button>
+        </div>
+    </footer>
+    </div>
+    
+    <
+</body>
+
+</html>
