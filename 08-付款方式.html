@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>請選擇付款方式</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-white">
+        <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-white bg-contain relative">
+            <!-- logo -->
+            <div class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
+                <img class="w-[68px]" src="./img/logo.png" alt="">
+            </div>
+            <img class="absolute top-[78px] left-[10px] w-[56px] " src="./img/叉叉按鈕.png" alt="叉叉按鈕">
+            <!-- 標題文字 -->
+            <div class="w-full h-[94px] p-16">
+                <p class="text-center text-black-500 text-2xl font-black ">請選擇付款方式</p>
+            </div>
+            <!-- 卡片區 -->
+            <div class="w-[264px] flex flex-wrap justify-between gap-4  py-10">
+                <!-- 第一張卡 -->
+                <div
+                    class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
+                    <img class="w-[100px] " src="./img/line pay.png" alt="">
+                    <div class="text-center px-2 ">
+                        <p class="text-[12px] font-bold truncate" style="font-family: 'Inter', sans-serif;">LINE Pay</p>
+                    </div>
+                </div>
+                <!-- 第二張卡 -->
+                <div
+                    class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
+                    <img class="h-[100px]" src="./img/街口支付.png" alt="">
+                    <div class="text-center px-2">
+                        <p class="text-xs font-bold truncate" style="font-family: 'Inter', sans-serif;">街口支付</p>
+                    </div>
+
+                </div>
+                <!-- 第三張卡 -->
+                <div
+                    class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
+                    <img class="w-[100px]" src="./img/apple pay.png" alt="">
+                    <div class="text-center px-2">
+                        <p class="text-xs font-bold truncate" style="font-family: 'Inter', sans-serif;">Apple Pay</p>
+                    </div>
+                </div>
+                <!-- 第四張卡 -->
+                <div
+                    class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
+                    <img class="w-[100px]" src="./img/櫃台支付.png" alt="">
+                    <div class="text-center px-2">
+                        <p class="text-xs font-bold truncate" style="font-family: 'Inter', sans-serif;">櫃台支付</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
