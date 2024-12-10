@@ -7,14 +7,16 @@
     <title>08-付款方式</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        p{
+        p {
             font-family: 'Inter', sans-serif;
         }
     </style>
+    
 
 </head>
 
 <body>
+
     <div class="flex items-center justify-center min-h-screen bg-white">
         <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-white bg-contain relative">
             <!-- logo -->
@@ -22,32 +24,25 @@
                 class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                 <img class="w-[68px]" src="./img/logo.png" alt="logo">
             </a>
-            <a href="./07-購物車內容.html"><img class="absolute top-[78px] left-[10px] w-[56px] " src="./img/叉叉按鈕.png"
-                    alt="返回"></a>
             <!-- 標題文字 -->
             <div class="w-full h-[94px] p-16">
-                <p class="text-center text-black-500 text-2xl font-black ">請選擇付款方式</p>
+                <p class="text-center text-black-500 text-2xl font-black ">請感應行動支付</p>
             </div>
-            <!-- 卡片區 -->
-
             <div class="h-[100%] flex justify-center ">
                 <!-- 第一張卡 -->
                 <div class="w-[284px] h-min flex flex-wrap gap-4">
                     <img src="./img/感應.png" alt="行動支付掃描">
-                    <!-- <div
-                        class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
-                        <img class="w-[100px] " src="./img/line pay.png" alt="支付line pay圖">
-                        <div class="text-center px-2 ">
-                            <p class="text-[12px] font-bold truncate">LINE Pay
-                            </p>
-                        </div>
-                    </div>                -->
                 </div>
-                
             </div>
-
         </div>
     </div>
+    <script>
+        // 3秒後跳轉到選擇發票方式
+        setTimeout(function () {
+            window.location.href = "./10-選擇發票方式.html";
+        }, 5000);
+    </script>
 </body>
+
 
 </html>
