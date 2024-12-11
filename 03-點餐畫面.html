@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>03-點餐畫面</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-          *,
+        *,
         ::after,
         ::before {
             box-sizing: border-box;
@@ -21,278 +20,137 @@
             text-decoration: none;
             color: black;
         }
-
-
-        h2,
-        h3,
-        p {
-            margin: 0;
-            font-style: normal;
+        ::-webkit-scrollbar {
+            display: none;
         }
 
-        
-        /* nav {
-            min-height: 75px;
-            width: 375px;
-            padding: 10px 12px;
-            background-color: white;
-            border-bottom: 1px solid #D9D9D9;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-        } */
-
-        .shopping-cart {
-            position: absolute;
-            right: 20px;
-        }
-
-        main {
-            padding-top: 75px;
-            display: flex;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .left-block {
-            overflow-y: scroll;
+        * {
+            -ms-overflow-style: none;
             scrollbar-width: none;
-            width: 88px;
-            font-size: 10px;
-            padding: 12px 12px 100px;
-            border-right: 1px solid rgba(0, 0, 0, 0.16);
-            background: rgba(255, 255, 255, 0.50);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
         }
-
-        .small-card {
-            width: 64px;
-            padding: 4px 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .small-card:active {
-            border-radius: 10px;
-            background: #FFF;
-            box-shadow: 0px 0px 4px 0px rgba(114, 42, 14, 0.25);
-        }
-
-        .right-block {
-            width: 287px;
-            padding: 0px 0px 100px;
-            display: flex;
-            flex-direction: column;
-            scrollbar-width: none;
-            overflow-y: scroll;
-        }
-
-        .right-block h3 {
-            width: 100%;
-            height: 68px;
-            font-size: 24px;
-            padding: 20px 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .big-card-space {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-
-        .big-card {
-            width: 124px;
-            height: 152px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-            padding: 12px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .big-card:active {
-            background: #FCC305;
-        }
-
-        .big-card p {
-            font-size: 12px;
-            font-weight: 600;
-
-        }
-
-        .big-card span {
-            font-size: 8px;
-        }
-
-        footer {
-            display: flex;
-            position: fixed;
-            bottom: 0px;
-        }
-
-        .footer-space {
-            width: 375px;
-            background: rgb(245, 245, 245);
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-            border-radius: 30px 30px 0px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 5px;
-        }
-
-        button {
-            width: 120px;
-            height: 39px;
-            background-color: rgb(252, 195, 5);
-            font-size: 16px;
-            font-weight: 600;
-            border: none;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
     </style>
-
 </head>
 
 <body>
-    <div class="h-screen max-w-[375px] font-semibold mx-auto flex flex-col">
-
-        <nav class="h-[68px] p-[10px] flex justify-center items-center flex-col border-b relative">
-            <a href="./01-起始畫面.html"><img src="./img/logo.png" alt="logo">
+    <div class="h-screen max-w-[375px] mx-auto flex flex-col">
+        <nav class="min-h-[75px] w-[375px] py-[10px] px-3 bg-white border-b border-[#D9D9D9] flex flex-col justify-center items-center fixed top-0 z-10">
+            <a href="./01-起始畫面.html">
+                <img src="./img/logo.png" alt="logo">
             </a>
-            <a href="./07-購物車內容.html" ><img src="./img/購物車.png" alt="購物車圖" class="absolute right-[0%]">
+            <a href="./07-購物車內容.html" class="absolute right-5">
+                <img src="./img/購物車.png" alt="購物車圖">
             </a>
         </nav>
-        
-      
-        <main>
-            <div class="left-block">
-                <a href="" class="small-card">
+
+        <main class="pt-[75px] flex h-full overflow-hidden ">
+            <div class="w-[88px] overflow-y-scroll scrollbar-none text-[10px] py-3 px-3 pb-[100px] border-r border-black/[0.16] bg-white/50 flex flex-col items-center gap-2">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/QR.png" alt="商品圖">
                     <p>掃描商品券</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image.png" alt="商品圖">
                     <p>極選系列</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (1).png" alt="商品圖">
                     <p>超值全餐</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (2).png" alt="商品圖">
                     <p>1+1星級點</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (3).png" alt="商品圖">
                     <p>飲料</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (4).png" alt="商品圖">
                     <p>McCafé®</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (5).png" alt="商品圖">
                     <p>點心</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (6).png" alt="商品圖">
                     <p>麥當勞分享盒</p>
                 </a>
-                <a href="" class="small-card">
+                <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
                     <img src="./img/image (7).png" alt="商品圖">
                     <p>Happy Meal®</p>
                 </a>
             </div>
 
-            <div class="right-block">
-                <h3>極選系列</h3>
-                <div class="big-card-space">
-                    <a href="./04-餐點畫面.html" class="big-card">
+            <div class="w-[287px] p-0 pb-[100px] flex flex-col overflow-y-scroll scrollbar-none">
+                <h3 class="w-full h-[68px] text-2xl py-5 px-[10px] flex justify-center items-center gap-[10px]">極選系列</h3>
+                <div class="flex justify-center flex-wrap gap-3">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
-                    <a href="./04-餐點畫面.html" class="big-card">
+                    <a href="./04-餐點畫面.html" class="w-[124px] h-[152px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] p-3 flex flex-col justify-center items-center gap-2 active:bg-[#FCC305]">
                         <img src="./img/small-img.png" alt="商品圖">
-                        <p>帕瑪森主廚鷄腿堡</p>
-                        <span>$108</span>
+                        <p class="text-xs font-semibold">帕瑪森主廚鷄腿堡</p>
+                        <span class="text-[8px]">$108</span>
                     </a>
                 </div>
             </div>
         </main>
 
-        <footer>
-            <div class="footer-space">
-                <a href="./01-起始畫面.html"><button type="button">取消整筆訂單</button></a>
-                <button type="button">友善模式</button>
+        <footer class="flex fixed bottom-0">
+            <div class="w-[375px] bg-[#F5F5F5] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-t-[30px] flex justify-center items-center gap-3 py-[10px] px-[5px]">
+                <a href="./01-起始畫面.html">
+                    <button type="button" class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold border-none rounded-[10px] flex justify-center items-center cursor-pointer">
+                        取消整筆訂單
+                    </button>
+                </a>
+                <button type="button" class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold border-none rounded-[10px] flex justify-center items-center cursor-pointer">
+                    友善模式
+                </button>
             </div>
         </footer>
     </div>
 </body>
-
 </html>
