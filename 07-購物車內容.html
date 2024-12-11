@@ -1,113 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>07-購物車內容</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        footer {
-            display: flex;
-            position: fixed;
-            bottom: 0px;
+         *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
         }
 
-        .footer-space {
-            width: 375px;
-            background: rgb(245, 245, 245);
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-            border-radius: 30px 30px 0px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 5px;
+        body {
+            margin: 0;
         }
 
-        .footer-space button {
-            width: 120px;
-            height: 39px;
-            background-color: rgb(252, 195, 5);
-            font-size: 16px;
-            font-weight: 600;
-            border: none;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        a {
+            text-decoration: none;
+            color: black;
         }
-    </style>
+        
     </style>
 </head>
 
 <body>
-    <div class="flex items-center justify-center min-h-screen ">
-        <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-contain relative">
+    
+        <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-contain relative mx-auto">
             <!-- logo -->
-             
-            <a href="./01-起始畫面.html" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
-                <img class="w-[68px]" src="./img/logo.png" alt="logo">
-            </a>
-                    <a href="./06-需要購物袋嗎.html">
-                        <img class="absolute top-[78px] left-[10px] w-[56px] " src="./img/叉叉按鈕.png" alt="返回">
-                    </a>
-                    <!-- 標題文字 -->
-                    <main class="w-full flex-col gap-3 px-4 mt-20  ">
-                        <!-- 帕瑪森主廚雞腿堡 -->
-                        <div class="  bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100 mb-2">
-                            <div class="flex gap-4 items-center">
-                                <img src="./img/1.png" alt="選購餐點圖" class="w-16 h-16 object-cover">
-                                <div>
-                                    <p class="font-bold text-base">帕瑪森主廚雞腿堡</p>
-                                    <p class="text-sm text-gray-500">無須加購套餐</p>
-                                    <div class="flex items-center gap-2 mt-1">
-                                        <button
-                                            class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">-</button>
-                                        <span class="mx-1">1</span>
-                                        <button
-                                            class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">+</button>
-                                    </div>
-                                </div>
+            <nav class="w-full relative">
+                <a href="./01-起始畫面.html" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
+                    <img class="w-[68px]" src="./img/logo.png" alt="logo">
+                </a>
+                <a href="./06-需要購物袋嗎.html">
+                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="./img/叉叉按鈕.png" alt="返回">
+                </a>
+            </nav>
+            <!-- 標題文字 -->
+            <main class="w-full flex-col gap-3 px-4 mt-20">
+                <!-- 帕瑪森主廚雞腿堡 -->
+                <div class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100 mb-2">
+                    <div class="flex gap-4 items-center">
+                        <img src="./img/1.png" alt="選購餐點圖" class="w-16 h-16 object-cover">
+                        <div>
+                            <p class="font-bold text-base">帕瑪森主廚雞腿堡</p>
+                            <p class="text-sm text-gray-500">無須加購套餐</p>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">-</button>
+                                <span class="mx-1">1</span>
+                                <button class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">+</button>
                             </div>
-                            <span class="font-bold">$108</span>
                         </div>
-
-                        <!-- 購物袋 -->
-                        <div
-                            class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100">
-                            <div class="flex gap-4 items-center">
-                                <img src="./img/購物袋.png" alt="購物袋圖" class="w-16 h-16 object-cover">
-                                <div>
-                                    <p class="font-bold text-base">塑膠袋</p>
-                                    <div class="flex items-center gap-2 mt-1">
-                                        <button
-                                            class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">-</button>
-                                        <span class="mx-1">1</span>
-                                        <button
-                                            class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="font-bold">$49</span>
-                        </div>
-                    </main>
-                    <div class="w-full flex justify-end pr-6 mt-64 mb-4">
-                        <p class="font-bold text-base">總計: $157</p>
                     </div>
-        </div>
+                    <span class="font-bold">$108</span>
+                </div>
 
-        <footer>
-            <div class="footer-space">
+                <!-- 購物袋 -->
+                <div class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100">
+                    <div class="flex gap-4 items-center">
+                        <img src="./img/購物袋.png" alt="購物袋圖" class="w-16 h-16 object-cover">
+                        <div>
+                            <p class="font-bold text-base">塑膠袋</p>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">-</button>
+                                <span class="mx-1">1</span>
+                                <button class="w-4 h-4 rounded-full bg-blue-500 text-white flex items-center justify-center">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="font-bold">$49</span>
+                </div>
+            </main>
+            <div class="w-full flex justify-end pr-6 mt-64 mb-4">
+                <p class="font-bold text-base">總計: $157</p>
+            </div>
+        
+
+        <!-- Footer Section -->
+        <footer class="flex fixed bottom-0">
+            <div class="w-[375px] bg-[#F5F5F5] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-t-[30px] flex justify-center items-center gap-3 py-[10px] px-[5px]">
                 <a href="./01-起始畫面.html">
-                    <button type="button">取消整筆訂單</button>
+                    <button type="button" class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold border-none rounded-[10px] flex justify-center items-center">
+                        取消整筆訂單
+                    </button>
                 </a>
                 <a href="./08-付款方式.html">
-                    <button type="button">下一步</button>
+                    <button type="button" class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold border-none rounded-[10px] flex justify-center items-center">
+                        下一步
+                    </button>
                 </a>
             </div>
         </footer>
     </div>
+</div>
 </body>
-
 </html>
