@@ -7,7 +7,7 @@
     <title>03-點餐畫面</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        *,
+          *,
         ::after,
         ::before {
             box-sizing: border-box;
@@ -15,13 +15,13 @@
 
         body {
             margin: 0;
-            font-family: Inter;
         }
 
         a {
             text-decoration: none;
             color: black;
         }
+
 
         h2,
         h3,
@@ -30,16 +30,8 @@
             font-style: normal;
         }
 
-        .all {
-            max-width: 375px;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            margin: 0 auto;
-        }
-
-        nav {
+        
+        /* nav {
             min-height: 75px;
             width: 375px;
             padding: 10px 12px;
@@ -52,7 +44,7 @@
             align-items: center;
             position: fixed;
             top: 0;
-        }
+        } */
 
         .shopping-cart {
             position: absolute;
@@ -181,17 +173,22 @@
             align-items: center;
             cursor: pointer;
         }
+
     </style>
+
 </head>
 
 <body>
-    <div class="all">
-        <nav>
+    <div class="h-screen max-w-[375px] font-semibold mx-auto flex flex-col">
+
+        <nav class="h-[68px] p-[10px] flex justify-center items-center flex-col border-b relative">
             <a href="./01-起始畫面.html"><img src="./img/logo.png" alt="logo">
             </a>
-            <a href="./07-購物車內容.html" class="shopping-cart"><img src="./img/購物車.png" alt="購物車圖"></a>
+            <a href="./07-購物車內容.html" ><img src="./img/購物車.png" alt="購物車圖" class="absolute right-[0%]">
+            </a>
         </nav>
-
+        
+      
         <main>
             <div class="left-block">
                 <a href="" class="small-card">
