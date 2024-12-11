@@ -32,34 +32,30 @@
 <body>
     <div
         class="w-full h-screen max-w-[375px] flex flex-col items-center justify-start bg-white bg-contain relative mx-auto">
-        <nav class="w-full relative">
-            <!-- logo -->
-            <input 
-                type="image" 
-                src="./img/logo.png" 
-                onclick="location.href='./01-起始畫面.html';" 
-                alt="logo" 
-                class="w-[68px] h-auto mx-auto border-b-[1px] border-[#D9D9D9] block">
-
-            <!-- <a href="./01-起始畫面.html"
+        <nav class="w-full relative  border-b-[1px] border-[#D9D9D9]">
+            <!-- logo按鈕 -->
+            <button onclick="location.href='./01-起始畫面.html';"
                 class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                 <img class="w-[68px]" src="./img/logo.png" alt="logo">
-            </a>  -->
-            <a href="./05-麥當勞商品卡片.html"><img class="absolute top-[78px] left-[10px] w-[56px] " src="./img/叉叉按鈕.png"
-                    alt="返回">
-            </a>
+            </button>
+
+            <!-- 返回按鈕 -->
+            <button onclick="location.href='./05-麥當勞商品卡片.html';" class="absolute top-[78px] left-[10px] w-[56px]">
+                <img src="./img/叉叉按鈕.png" alt="返回">
+            </button>
+
         </nav>
 
         <main class="h-full">
-            <!-- 標題文字 -->
+        
             <div class="w-full h-[94px] p-16">
                 <p class="text-center text-black-500 text-2xl font-black ">請問需要購物袋嗎</p>
             </div>
-            <!-- 卡片區 -->
+        
             <div class="h-[100%] flex justify-center ">
                 <div class="w-[264px] h-min flex flex-wrap gap-4">
                     <!-- 第一張卡 -->
-                    <a href="./07-購物車內容.html"
+                    <button onclick="location.href='./07-購物車內容.html';"
                         class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
                         <img class="w-[100px] " src="./img/購物袋黑.png" alt="購物袋黑">
                         <div class="text-center px-2 ">
@@ -67,9 +63,9 @@
                             </p>
                             <p class="text-[8px] font-medium">$49</p>
                         </div>
-                    </a>
+                    </button>
                     <!-- 第二張卡 -->
-                    <a href="./07-購物車內容.html"
+                    <button onclick="location.href='./07-購物車內容.html';"
                         class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
                         <img class="w-[100px]" src="./img/購物袋紅.png" alt="購物袋紅">
                         <div class="text-center px-2">
@@ -77,16 +73,16 @@
                             </p>
                             <p class="text-[8px] font-medium">$49</p>
                         </div>
-                    </a>
+                    </button>
                     <!-- 第三張卡 -->
-                    <a href="./07-購物車內容.html"
+                    <button onclick="location.href='./07-購物車內容.html';"
                         class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
                         <img class="w-[100px]" src="./img/購物袋.png" alt="購物袋">
                         <div class="text-center px-2">
                             <p class="text-xs font-bold truncate">塑膠袋</p>
                             <p class="text-[8px] font-medium">$2</p>
                         </div>
-                    </a>
+                    </button>
                 </div>
             </div>
         </main>
@@ -94,11 +90,11 @@
         <footer>
             <div class="w-full h-[94px] flex items-center justify-center p-4">
                 <!-- 連結到你的訂單內容 -->
-                <a href="./07-購物車內容.html">
+                <button onclick="location.href='./07-購物車內容.html';"
                     <div class="w-[264px] h-[39px] bg-[rgb(252,195,5)] rounded-[10px] flex items-center justify-center">
-                        <p class="text-base  font-black">不需要,謝謝!</p>
+                        <p class="text-base font-black">不需要,謝謝!</p>
                     </div>
-                </a>
+                </button>
             </div>
         </footer>
     </div>
