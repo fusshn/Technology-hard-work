@@ -26,7 +26,7 @@
                 class="card w-[140px] h-[160px] p-[8px] flex flex-col justify-center items-center border rounded-[5px] active:bg-[linear-gradient(144deg,_#FC6405_0%,_#E60013_103.82%)] active:text-white">
                 <a href="./03-點餐畫面.html" class="flex items-center flex-col">
                     <p>外帶</p>
-                    <img src="../assets/img/外帶.png" alt="外帶圖">
+                    <img src="../assets/img/takeout.png" alt="外帶圖">
                 </a>
             </div>
         </div>
@@ -43,7 +43,7 @@
     </div>
 
     <div class=" bg-[#f5f5f5] rounded-tr-[50%] rounded-br-[50%]">
-        <img src="../assets/img/掃描.png" alt="QR掃描圖">
+        <img src="../assets/img/screen.png" alt="QR掃描圖">
     </div>
 
 </footer>

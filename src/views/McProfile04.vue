@@ -3,18 +3,18 @@
 <template>
     <div class="max-w-[375px] w-full h-screen flex flex-col relative">
         <nav class="h-[68px] bg-white border-b border-[#D9D9D9] p-[10px] flex flex-col justify-center items-center sticky top-0 z-[9]">
-            <a href="./01-起始畫面.html">
+            <a href="./McProfile01.vue">
                 <img src="../assets/img/logo.png" alt="logo">
             </a>
         </nav>
 
         <main class="w-full flex justify-center items-center flex-col sticky gap-1">
             
-            <button onclick="location.href='./03-點餐畫面.html';" class="w-[56px] h-[32px] text-white bg-black p-[10px] flex flex-col justify-center items-center rounded-[15px] absolute top-[10px] left-[10px] cursor-pointer">
+            <button onclick="location.href='.';" class="w-[56px] h-[32px] text-white bg-black p-[10px] flex flex-col justify-center items-center rounded-[15px] absolute top-[10px] left-[10px] cursor-pointer">
                 ◀
             </button>
 
-            <img src="../assets/img/image 39.png" alt="返回" class="w-[200px] h-[160px]">
+            <img src="../assets/img/image39.png" alt="返回" class="w-[200px] h-[160px]">
             <h2 class="text-[28px] font-bold">帕瑪森主廚鷄腿堡</h2>
             <p class="text-[20px] text-[#1EB449] font-bold">$108</p>
         </main>
@@ -22,7 +22,7 @@
         <div class="py-4 pb-12 gap-5 flex justify-center items-center flex-col">
             <!-- 單點 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46.png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46.png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">單點</h3>
                     <p class="text-xs font-semibold">無須加購套餐</p>
@@ -32,7 +32,7 @@
 
             <!-- 經典配餐 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46 (1).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46(1).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">經典配餐</h3>
                     <div>

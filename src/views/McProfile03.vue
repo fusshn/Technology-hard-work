@@ -7,7 +7,7 @@
         <img src="../assets/img/logo.png" alt="logo">
     </a>
     <a href="./07-購物車內容.html" class="absolute right-5">
-        <img src="../assets/img/購物車.png" alt="購物車圖">
+        <img src="../assets/img/cart.png" alt="購物車圖">
     </a>
 </nav>
 
@@ -22,31 +22,31 @@
             <p>極選系列</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (1).png" alt="商品圖">
+            <img src="../assets/img/image(1).png" alt="商品圖">
             <p>超值全餐</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (2).png" alt="商品圖">
+            <img src="../assets/img/image(2).png" alt="商品圖">
             <p>1+1星級點</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (3).png" alt="商品圖">
+            <img src="../assets/img/image(3).png" alt="商品圖">
             <p>飲料</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (4).png" alt="商品圖">
+            <img src="../assets/img/image(4).png" alt="商品圖">
             <p>McCafé®</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (5).png" alt="商品圖">
+            <img src="../assets/img/image(5).png" alt="商品圖">
             <p>點心</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (6).png" alt="商品圖">
+            <img src="../assets/img/image(6).png" alt="商品圖">
             <p>麥當勞分享盒</p>
         </a>
         <a href="" class="w-[64px] px-0 py-1 flex flex-col items-center gap-1 active:rounded-[10px] active:bg-white active:shadow-[0px_0px_4px_0px_rgba(114,42,14,0.25)]">
-            <img src="../assets/img/image (7).png" alt="商品圖">
+            <img src="../assets/img/image(7).png" alt="商品圖">
             <p>Happy Meal®</p>
         </a>
     </div>

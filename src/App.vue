@@ -13,7 +13,23 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/McProfile01">1</RouterLink>
+        <RouterLink to="/McProfile02">2</RouterLink>
+        <RouterLink to="/McProfile03">3</RouterLink>
+        <RouterLink to="/McProfile04">4</RouterLink>
+        <RouterLink to="/McProfile05">5</RouterLink>
+        <RouterLink to="/McProfile06">6</RouterLink>
+        <RouterLink to="/McProfile07">7</RouterLink>
+        <RouterLink to="/McProfile08">8</RouterLink>
+        <RouterLink to="/McProfile09">9</RouterLink>
+        <RouterLink to="/McProfile10">10</RouterLink>
+        <RouterLink to="/McProfile11">11</RouterLink>
+        <RouterLink to="/McProfile12">12</RouterLink>
+
+
+
       </nav>
+      
     </div>
   </header>
 
