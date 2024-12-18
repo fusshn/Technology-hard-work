@@ -21,7 +21,7 @@ const router = createRouter({
     {
       path: '/start',
       name: 'start',
-      component: () => import('../views/01-StartView.vue'),
+      component: () => import('../views/McProfile01.vue'),
     },
   ],
 })

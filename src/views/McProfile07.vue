@@ -1,40 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>07-購物車內容</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-         *,
-        ::after,
-        ::before {
-            box-sizing: border-box;
-        }
+<script></script>
 
-        body {
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-    </style>
-</head>
-
-<body>
+<template>
     <div class="flex items-center justify-center min-h-screen bg-white">
         <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-contain relative">
             <!-- Nav Section -->
             <nav>
                 <!-- logo -->
                 <a href="./01-起始畫面.html" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
-                    <img class="w-[68px]" src="./img/logo.png" alt="logo">
+                    <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
                 </a>
                 <a href="./06-需要購物袋嗎.html">
-                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="./img/叉叉按鈕.png" alt="返回">
+                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="../assets/img/叉叉按鈕.png" alt="返回">
                 </a>
             </nav>
 
@@ -45,7 +21,7 @@
                     <!-- 帕瑪森主廚雞腿堡 -->
                     <div class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100 mb-2">
                         <div class="flex gap-4 items-center">
-                            <img src="./img/1.png" alt="選購餐點圖" class="w-16 h-16 object-cover">
+                            <img src="../assets/img/1.png" alt="選購餐點圖" class="w-16 h-16 object-cover">
                             <div>
                                 <p class="font-bold text-base">帕瑪森主廚雞腿堡</p>
                                 <p class="text-sm text-gray-500">無須加購套餐</p>
@@ -62,7 +38,7 @@
                     <!-- 購物袋 -->
                     <div class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100">
                         <div class="flex gap-4 items-center">
-                            <img src="./img/購物袋.png" alt="購物袋圖" class="w-16 h-16 object-cover">
+                            <img src="../assets/img/購物袋.png" alt="購物袋圖" class="w-16 h-16 object-cover">
                             <div>
                                 <p class="font-bold text-base">塑膠袋</p>
                                 <div class="flex items-center gap-2 mt-1">
@@ -93,6 +69,4 @@
             </footer>
         </div>
     </div>
-
-</body>
-</html>
+</template>

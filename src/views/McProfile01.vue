@@ -3,8 +3,8 @@
 <template>
     <div class="w-full h-screen max-w-[375px] font-semibold mx-auto flex flex-col">
         <main class="h-full">
-                <a href="./02-選擇用餐方式.html" class="relative">
-                    <img src="./img/banner.png" alt="首頁圖片" class="object-cover h-full w-full">
+                <a href="./02-DiningmodeView.vue" class="relative">
+                    <img src="../assets/img/banner.png" alt="首頁圖片" class="object-cover h-full w-full">
                     <div
                         class="absolute bottom-0 w-full h-[30px] flex justify-center items-center  bg-[#1fb549] text-[white]">
                         請點擊上方螢幕
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class=" bg-[#f5f5f5] rounded-tr-[50%] rounded-br-[50%]">
-                    <img src="./img/掃描.png" alt="QR掃描圖">
+                    <img src="../assets/img/screen.png" alt="QR掃描圖">
                 </div>
         </footer>
     </div>
