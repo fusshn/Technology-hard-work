@@ -1,9 +1,8 @@
 <script></script>
 
 <template>
-    <div
-        class="w-full h-screen max-w-[375px] flex flex-col items-center justify-start bg-white bg-contain relative mx-auto">
-        <nav class="w-full relative  border-b-[1px] border-[#D9D9D9]">
+    <div class="w-full h-screen max-w-[375px] flex flex-col items-center justify-start bg-white bg-contain relative mx-auto">
+        <nav class="w-full relative  border-b border-[#D9D9D9]">
             <!-- logo按鈕 -->
             <button onclick="location.href='./McProfile01';"
                 class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">

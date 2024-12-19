@@ -12,10 +12,16 @@ export default {
     <div class="w-[375px] h-screen flex flex-col bg-contain relative mx-auto">
         <!-- Nav Section -->
         <nav class="w-full">
-            <input type="button" 
+            <button @click="goToProfile('/McProfile04')" class="absolute top-[78px] left-[10px] w-[56px]">
+                <img src="../assets/img/XXbutton.png" alt="返回">
+            </button>
+            <!-- <button @click="goToProfile('/McProfile04')" class="w-[56px] h-[32px] text-white bg-black p-[10px] flex flex-col justify-center items-center rounded-[15px] absolute top-[10px] left-[10px] cursor-pointer">
+                <img src="../assets/img/XXbutton.png" alt="返回按鈕">
+            </button> -->
+            <!-- <input type="button" 
                 onclick="location.href='./McProfile04.vue';"             
                 value="<"
-                class="w-[56px] h-[32px] bg-black rounded-2xl absolute left-4 top-4 flex items-center justify-center text-white text-base cursor-pointer border-0" />
+                class="w-[56px] h-[32px] bg-black rounded-2xl absolute left-4 top-4 flex items-center justify-center text-white text-base cursor-pointer border-0" /> -->
         </nav>
 
         <!-- Main Section -->

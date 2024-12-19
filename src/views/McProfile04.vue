@@ -9,8 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="max-w-[375px] mx-auto h-screen flex flex-col">
-    <!-- <div class="max-w-[375px] w-full h-screen flex flex-col relative"> -->
+    <div class="max-w-[375px] mx-auto h-screen flex flex-col"> 
         <nav class="h-[68px] bg-white border-b border-[#D9D9D9] p-[10px] flex flex-col justify-center items-center sticky top-0 z-[9]">
             <button @click="goToProfile('/McProfile01')">
                 <img src="../assets/img/logo.png" alt="logo">
@@ -19,8 +18,8 @@ export default {
 
         <main class="w-full flex justify-center items-center flex-col sticky gap-1">
             
-            <button @click="goToProfile('/McProfile03')" class="w-[56px] h-[32px] text-white bg-black p-[10px] flex flex-col justify-center items-center rounded-[15px] absolute top-[10px] left-[10px] cursor-pointer">
-                <img src="../assets/img/XXbutton.png" alt="返回按鈕">
+            <button @click="goToProfile('/McProfile03')" class="absolute top-[78px] left-[24px] w-[56px]">
+                <img src="../assets/img/XXbutton.png" alt="返回">
             </button>
 
             <img src="../assets/img/image39.png" alt="返回" class="w-[200px] h-[160px]">

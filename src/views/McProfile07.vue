@@ -4,7 +4,7 @@
     <div class="flex items-center justify-center min-h-screen bg-white">
         <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-contain relative">
             <!-- Nav Section -->
-            <nav>
+            <nav class="w-full relative  border-b-[1px] border-[#D9D9D9]">
                 <!-- logo -->
                 <a href="./McProfile01.vue" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                     <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
