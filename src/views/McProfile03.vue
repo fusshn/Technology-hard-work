@@ -1,11 +1,19 @@
-<script></script>
+<script>
+export default {
+    methods: {
+        goToProfile(item) {
+            this.$router.push(item); // 程式化導航
+        },
+    },
+};
+</script>
 <template>
     <div class="h-screen max-w-[375px] mx-auto flex flex-col">
 
-<nav class="min-h-[68px] w-[375px] py-[10px] px-3 border-b border-[#D9D9D9] flex flex-col justify-center items-center fixed top-0 z-10">
-    <a href="./01-起始畫面.html">
+<nav class="h-[68px] w-[375px] py-[10px] px-3 border-b border-[#D9D9D9] flex flex-col justify-center items-center fixed top-0 z-10">
+    <button @click="goToProfile('/McProfile01')">
         <img src="../assets/img/logo.png" alt="logo">
-    </a>
+    </button>
     <a href="./07-購物車內容.html" class="absolute right-5">
         <img src="../assets/img/cart.png" alt="購物車圖">
     </a>

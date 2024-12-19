@@ -4,13 +4,14 @@
     <div class="w-full h-screen max-w-[375px] flex flex-col items-center justify-start bg-contain relative mx-auto">
         <nav class="w-full">
             <!-- logo -->
-            <button onclick="location.href='./01-起始畫面.html';"
+            <button onclick="location.href='./McProfile01';"
                 class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                 <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
             </button>
 
-            <button onclick="location.href='./07-購物車內容.html';" <a href="./07-購物車內容.html"><img
-                    class="absolute top-[78px] left-[10px] w-[56px] " src="../assets/img/叉叉按鈕.png" alt="返回">
+            <button onclick="location.href='./McProfile07';" 
+                class="absolute top-[78px] left-[10px] w-[56px] " src="../assets/img/XXbutton.png" alt="返回">
+                <img  src="../assets/img/XXbutton.png" alt="logo">
             </button>
         </nav>
 
@@ -24,10 +25,10 @@
             <div class="h-[100%] flex justify-center ">
                 <!-- 第一張卡 -->
                 <div class="w-[264px] h-min flex flex-wrap gap-4">
-                    <button onclick='location.href="./09-請感應行動支付.html"'>
+                    <button onclick='location.href="./McProfile09"'>
                         <div
                             class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
-                            <img class="w-[100px] " src="../assets/img/line pay.png" alt="支付line pay圖">
+                            <img class="w-[100px] " src="../assets/img/linepay.png" alt="支付line pay圖">
                             <div class="text-center px-2 ">
                                 <p class="text-[12px] font-bold truncate">LINE Pay
                                 </p>
@@ -35,20 +36,20 @@
                         </div>
                     </button>
                     <!-- 第二張卡 -->
-                    <button onclick='location.href="./09-請感應行動支付.html"'>
+                    <button onclick='location.href="./McProfile09"'>
                         <div
                             class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
-                            <img class="h-[100px]" src="../assets/img/街口支付.png" alt="支付街口圖">
+                            <img class="h-[100px]" src="../assets/img/jkopay.png" alt="支付街口圖">
                             <div class="text-center px-2">
                                 <p class="text-xs font-bold truncate">街口支付</p>
                             </div>
                         </div>
                     </button>
                     <!-- 第三張卡 -->
-                    <button onclick='location.href="./09-請感應行動支付.html"'>
+                    <button onclick='location.href="./McProfile09"'>
                         <div
                             class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
-                            <img class="w-[100px]" src="../assets/img/apple pay.png" alt="支付apple pay圖">
+                            <img class="w-[100px]" src="../assets/img/applepay.png" alt="支付apple pay圖">
                             <div class="text-center px-2">
                                 <p class="text-xs font-bold truncate">Apple Pay
                                 </p>
@@ -56,10 +57,10 @@
                         </div>
                     </button>
                     <!-- 第四張卡 -->
-                    <button onclick='location.href="./10-選擇發票方式.html"'>
+                    <button onclick='location.href="./McProfile10"'>
                         <div
                             class="w-[124px] h-[152px] bg-white rounded-[20px] flex flex-col items-center shadow-[0_0px_4px_0_rgba(0,0,0,0.25)] gap-y-2 p-3">
-                            <img class="w-[100px]" src="../assets/img/櫃台支付.png" alt="支付櫃台結帳圖">
+                            <img class="w-[100px]" src="../assets/img/counter.png" alt="支付櫃台結帳圖">
                             <div class="text-center px-2">
                                 <p class="text-xs font-bold truncate">櫃台支付</p>
                             </div>

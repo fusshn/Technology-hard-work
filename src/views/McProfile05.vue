@@ -1,11 +1,19 @@
-<script></script>
+<script>
+export default {
+    methods: {
+        goToProfile(item) {
+            this.$router.push(item); // 程式化導航
+        },
+    },
+};
+</script>
 
 <template>
     <div class="w-[375px] h-screen flex flex-col bg-contain relative mx-auto">
         <!-- Nav Section -->
         <nav class="w-full">
             <input type="button" 
-                onclick="location.href='./04-餐點畫面.html';" 
+                onclick="location.href='./McProfile04.vue';"             
                 value="<"
                 class="w-[56px] h-[32px] bg-black rounded-2xl absolute left-4 top-4 flex items-center justify-center text-white text-base cursor-pointer border-0" />
         </nav>
@@ -13,7 +21,7 @@
         <!-- Main Section -->
         <main class="flex-1 overflow-auto">
             <div class="w-[375px] h-[226px] relative flex flex-col items-center">
-                <img class="w-[200px] h-[160px] object-contain mt-2" src="../assets/img/大圖.png" alt="商品圖片">
+                <img class="w-[200px] h-[160px] object-contain mt-2" src="../assets/img/bigpicture.png" alt="商品圖片">
                 <h1 class="w-[375px] h-[34px] text-2xl font-bold text-center mt-1 leading-[34px]">帕瑪森主廚雞腿堡</h1>
                 <p class="w-[375px] h-[24px] text-[#00a650] text-xl font-bold text-center mt-1 leading-[24px]">$108</p>
             </div>
@@ -35,7 +43,7 @@
                 <div class="grid grid-cols-4 gap-1">
                     <div class="w-[90px] rounded-lg border border-gray-200 cursor-pointer" onclick="location.href='';">
                         <div class="flex flex-col items-center justify-center bg-gray-50 p-[8px]">
-                            <img src="../assets/img/麵包.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
+                            <img src="../assets/img/bread.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
                             <p class="text-[10px]">麵包</p>
                             <p class="text-[8px] text-gray-400">無須加購套餐</p>
                         </div>
@@ -48,7 +56,7 @@
                     </div>
                     <div class="w-[90px] rounded-lg border border-gray-200 cursor-pointer" onclick="location.href='';">
                         <div class="flex flex-col items-center justify-center bg-gray-50 p-[8px]">
-                            <img src="../assets/img/麵包.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
+                            <img src="../assets/img/bread.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
                             <p class="text-[10px]">麵包</p>
                             <p class="text-[8px] text-gray-400">無須加購套餐</p>
                         </div>
@@ -61,7 +69,7 @@
                     </div>
                     <div class="w-[90px] rounded-lg border border-gray-200 cursor-pointer" onclick="location.href='';">
                         <div class="flex flex-col items-center justify-center bg-gray-50 p-[8px]">
-                            <img src="../assets/img/麵包.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
+                            <img src="../assets/img/bread.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
                             <p class="text-[10px]">麵包</p>
                             <p class="text-[8px] text-gray-400">無須加購套餐</p>
                         </div>
@@ -74,7 +82,7 @@
                     </div>
                     <div class="w-[90px] rounded-lg border border-gray-200 cursor-pointer" onclick="location.href='';">
                         <div class="flex flex-col items-center justify-center bg-gray-50 p-[8px]">
-                            <img src="../assets/img/麵包.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
+                            <img src="../assets/img/bread.png" alt="加購圖片" class="w-[23px] h-[23px] rounded-md mb-1">
                             <p class="text-[10px]">麵包</p>
                             <p class="text-[8px] text-gray-400">無須加購套餐</p>
                         </div>
@@ -121,11 +129,11 @@
                 <footer class="fixed bottom-0 flex">
                     <div class="w-[375px] bg-[#F5F5F5] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-t-[30px] flex justify-center items-center gap-3 p-[10px_5px]">
                         <input type="button" 
-                            onclick="location.href='./01-起始畫面.html';" 
+                            onclick="location.href='./McProfile01.vue';" 
                             value="取消整筆訂單"
                             class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold rounded-[10px] flex items-center justify-center cursor-pointer border-0" />
                         <input type="button" 
-                            onclick="location.href='./06-需要購物袋嗎.html';" 
+                            onclick="location.href='./McProfile06.vue';" 
                             value="下一步"
                             class="w-[120px] h-[39px] bg-[#FCC305] text-base font-semibold rounded-[10px] flex items-center justify-center cursor-pointer border-0" />
                     </div>

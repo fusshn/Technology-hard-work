@@ -6,11 +6,11 @@
             <!-- Nav Section -->
             <nav>
                 <!-- logo -->
-                <a href="./01-起始畫面.html" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
+                <a href="./McProfile01.vue" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                     <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
                 </a>
-                <a href="./06-需要購物袋嗎.html">
-                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="../assets/img/叉叉按鈕.png" alt="返回">
+                <a href="./McProfile06.vue">
+                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="../assets/img/XXbutton.png" alt="返回">
                 </a>
             </nav>
 
@@ -38,7 +38,7 @@
                     <!-- 購物袋 -->
                     <div class="bg-white rounded-[20px] p-4 flex justify-between items-center shadow-sm border border-gray-100">
                         <div class="flex gap-4 items-center">
-                            <img src="../assets/img/購物袋.png" alt="購物袋圖" class="w-16 h-16 object-cover">
+                            <img src="../assets/img/bagw.png" alt="購物袋圖" class="w-16 h-16 object-cover">
                             <div>
                                 <p class="font-bold text-base">塑膠袋</p>
                                 <div class="flex items-center gap-2 mt-1">
@@ -59,10 +59,10 @@
             <!-- Footer Section -->
             <footer>
                 <div class="footer-space">
-                    <a href="./01-起始畫面.html">
+                    <a href="./McProfile01">
                         <button type="button">取消整筆訂單</button>
                     </a>
-                    <a href="./08-付款方式.html">
+                    <a href="./McProfile08">
                         <button type="button">下一步</button>
                     </a>
                 </div>

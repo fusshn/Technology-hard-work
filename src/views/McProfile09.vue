@@ -5,7 +5,7 @@
         class="w-full h-screen max-w-[375px] flex flex-col items-center justify-start bg-contain relative mx-auto">
         <nav class="w-full">
             <!-- logo -->
-            <a href="./01-起始畫面.html"
+            <a href="./McProfile01"
                 class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
                 <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
             </a>
@@ -19,7 +19,7 @@
             <div class="h-[100%] flex justify-center ">
                 <!-- 第一張卡 -->
                 <div class="w-[284px] h-min flex flex-wrap gap-4">
-                    <img src="../assets/img/感應.png" alt="行動支付掃描">
+                    <img src="../assets/img/induction.png" alt="行動支付掃描">
                 </div>
             </div>
         </main>

@@ -1,11 +1,20 @@
-<script></script>
+<script>
+export default {
+    methods: {
+        goToProfile(item) {
+            this.$router.push(item); // 程式化導航
+        },
+    },
+};
+</script>
 
 <template>
  <div class="w-full h-screen max-w-[375px] font-semibold mx-auto flex flex-col">
 
 <nav class="h-[68px] p-[10px] flex justify-center items-center flex-col">
-    <a href="./01-StartView.vue"><img src="../assets/img/logo.png" alt="logo">
-    </a>
+    <button @click="goToProfile('/McProfile01')" type="button" >
+        <img src="../assets/img/logo.png" alt="logo">
+    </button>
 </nav>
 
 
@@ -17,17 +26,17 @@
         <div class="p-[20px] flex gap-[20px]">
             <div
                 class="card w-[140px] h-[160px] p-[8px] flex flex-col justify-center items-center border rounded-[5px] active:bg-[linear-gradient(144deg,_#FC6405_0%,_#E60013_103.82%)] active:text-white">
-                <a href="./03-OrderingscrennView.vue" class="flex items-center flex-col">
+                <button @click="goToProfile('/McProfile03')" class="flex items-center flex-col">
                     <p>內用</p>
                     <img src="../assets/img/togo.png" alt="內用圖">
-                </a>
+                </button>
             </div>
             <div
                 class="card w-[140px] h-[160px] p-[8px] flex flex-col justify-center items-center border rounded-[5px] active:bg-[linear-gradient(144deg,_#FC6405_0%,_#E60013_103.82%)] active:text-white">
-                <a href="./03-點餐畫面.html" class="flex items-center flex-col">
+                <button @click="goToProfile('/McProfile03')" class="flex items-center flex-col">
                     <p>外帶</p>
                     <img src="../assets/img/takeout.png" alt="外帶圖">
-                </a>
+                </button>
             </div>
         </div>
     </div>
