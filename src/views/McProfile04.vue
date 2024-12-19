@@ -44,7 +44,7 @@
 
             <!-- 清爽配餐 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46 (2).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46(2).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">清爽配餐</h3>
                     <div>
@@ -57,7 +57,7 @@
 
             <!-- 勁脆配餐 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46 (3).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46(3).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">勁脆配餐</h3>
                     <p class="text-xs font-semibold">麥脆雞塊一塊(棒腿或</p>
@@ -68,7 +68,7 @@
 
             <!-- 炫冰配餐 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46 (4).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46(4).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">炫冰配餐</h3>
                     <p class="text-xs font-semibold">冰炫風(oreo)+小薯</p>
