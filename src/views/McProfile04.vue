@@ -21,7 +21,7 @@
 
         <div class="py-4 pb-12 gap-5 flex justify-center items-center flex-col">
             <!-- 單點 -->
-            <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
+            <a href="./McProfile05.vue" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
                 <img src="../assets/img/Rectangle46.png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">單點</h3>
@@ -79,7 +79,7 @@
 
             <!-- 豪吃配餐 -->
             <a href="./05-麥當勞商品卡片.html" class="w-[327px] h-[100px] rounded-[25px] px-2 border border-black/20 flex items-center gap-2 active:border-transparent active:text-white active:bg-gradient-to-r active:from-[#FC9D05] active:to-[#E60013]">
-                <img src="../assets/img/Rectangle 46 (5).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
+                <img src="../assets/img/Rectangle46(5).png" alt="套餐加購圖片" class="w-[80px] h-[80px] rounded-[25px] p-3">
                 <div class="w-[152px] h-full py-3 flex flex-col justify-center">
                     <h3 class="text-[18px] font-semibold">豪吃配餐</h3>
                     <p class="text-xs font-semibold">麥可雞塊(六塊)</p>
