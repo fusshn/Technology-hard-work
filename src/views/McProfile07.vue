@@ -1,18 +1,19 @@
 <script></script>
 
 <template>
-    <div class="flex items-center justify-center min-h-screen bg-white">
-        <div class="w-[375px] h-screen flex flex-col items-center justify-start bg-contain relative">
-            <!-- Nav Section -->
-            <nav class="w-full relative  border-b-[1px] border-[#D9D9D9]">
-                <!-- logo -->
-                <a href="./McProfile01.vue" class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
-                    <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
-                </a>
-                <a href="./McProfile06.vue">
-                    <img class="absolute top-[78px] left-[10px] w-[56px]" src="../assets/img/XXbutton.png" alt="返回">
-                </a>
-            </nav>
+    <div class="w-full min-h-screen max-w-[375px] flex flex-col  items-center justify-start bg-contain relative mx-auto">
+        <nav class="w-full">
+            <button onclick="location.href='./McProfile01';"
+                class="w-full h-[68px] flex items-center justify-center border-b-[1px] border-[#D9D9D9]">
+                <img class="w-[68px]" src="../assets/img/logo.png" alt="logo">
+            </button>
+
+            <button onclick="location.href='./McProfile06';" 
+                class="absolute top-[78px] left-[10px] w-[56px] " src="../assets/img/XXbutton.png" alt="返回">
+                <img  src="../assets/img/XXbutton.png" alt="logo">
+            </button>
+        </nav>
+            
 
             <!-- Main Section -->
             <main>
@@ -67,6 +68,5 @@
                     </a>
                 </div>
             </footer>
-        </div>
     </div>
 </template>

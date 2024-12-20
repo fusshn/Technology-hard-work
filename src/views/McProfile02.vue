@@ -11,11 +11,11 @@ export default {
 <template>
  <div class="w-full h-screen max-w-[375px] font-semibold mx-auto flex flex-col">
 
-<nav class="h-[68px] p-[10px] flex justify-center items-center flex-col">
-    <button @click="goToProfile('/McProfile01')" type="button" >
-        <img src="../assets/img/logo.png" alt="logo">
-    </button>
-</nav>
+    <nav class="h-[68px] p-[10px] flex justify-center items-center flex-col">
+        <button @click="goToProfile('/McProfile01')" type="button" >
+            <img src="../assets/img/logo.png" alt="logo">
+        </button>
+    </nav>
 
 
 <main class="h-full">
